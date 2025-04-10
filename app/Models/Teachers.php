@@ -15,5 +15,8 @@ class Teachers extends Model
     public function TrainingCenter(){
         return $this->belongsTo('App\Models\TrainingCenter');
     }
-    
+    public function course(){
+        return $this->belongsTomany('App\Models\Course');
+    }
+
 }
