@@ -4,19 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Teachers extends Model
+class Teacher extends Model
 {
     //Relacion Uno a Muchos (Inversa) con Area
      public function Area(){
-        return $this->belongsTo('App\Models\Area');
+        return $this->belongsTo(Area::class);
     }
 
     //Relacion Uno a Muchos (Inversa) con TrainingCenter
     public function TrainingCenter(){
-        return $this->belongsTo('App\Models\TrainingCenter');
+        return $this->belongsTo(TrainingCenter::class);
     }
     public function course(){
-        return $this->belongsTomany('App\Models\Course');
+        return $this->belongsTomany(Course::class);
     }
 
 }

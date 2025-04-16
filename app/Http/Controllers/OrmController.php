@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use App\Models\Apprentices;
+use App\Models\Apprentice;
 use App\Models\Area;
-use App\Models\Computers;
-use App\Models\Courses;
-use App\Models\Teachers;
+use App\Models\Computer;
+use App\Models\Course;
+use App\Models\Teacher;
 use App\Models\TrainingCenter;
 
 
@@ -18,30 +18,27 @@ class OrmController extends Controller
     //
     public function consultas(){
 
-        // $user = User::find(12);
-        // return $user;
-
-        // $area = Area::find(1222);
+        // $area = Area::find(1);
         // return $area;
 
-        // $trainingCenter = TrainingCenter::find(4974);
-        // return $trainingCenter;
+        //  $trainingCenter = TrainingCenter::find(1);
+        //  return $trainingCenter;
 
-        // $teacher = Teachers::find(116);
+        // $teacher = Teacher::find(1);
         // return $teacher;
 
-        // $course = Courses::find(615);
-        // return $course;
+        //  $course = Course::find(1);
+        //  return $course;
 
-        // $computer = Computers::find(104);
-        // return $computer;
+        //  $computer = Computer::find(1);
+        //  return $computer;
 
-        // $apprentices = Apprentices::find(15868949);
+        // $apprentices = Apprentice::find(1);
         // return $apprentices;
 
          //RELACIONES ANIDADAS
 
-        return Teachers::with('TrainingCenter.Courses')->get();
+        return Teacher::with('Area')->get();
     
     }
 }
