@@ -14,8 +14,8 @@ class TeacherController extends Controller
     {
         $teachers = Teacher::all();
         $areas = Area::all();
-        $trainingCenters = TrainingCenter::all();
-        return view('teacher.index', compact('teachers','areas,trainingCenters'));
+        $trainingCenters = TrainingCenter::all(); 
+        return view('teacher.index', compact('teachers','areas','trainingCenters'));
     }
 }
 
