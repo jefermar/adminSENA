@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Computers')
 @section('content')
 
                  @foreach ($computers as $computer)
