@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container">
     <!-- Logo / Marca -->
-    <a class="navbar-brand fw-bold text-warning" href="#">MiSitioWeb</a>
+    <a class="navbar-brand fw-bold text-warning" href="#">Admin Sena</a>
 
     <!-- Botón del menú (Responsive) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">

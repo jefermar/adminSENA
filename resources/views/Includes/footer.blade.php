@@ -3,7 +3,7 @@
         <div class="row text-center text-md-start">
             <!-- Logo y Descripción -->
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 fw-bold text-warning">Mi Sitio Web</h5>
+                <h5 class="text-uppercase mb-4 fw-bold text-warning">Admin Sena</h5>
                 <p>Tu aliado en desarrollo web. Diseñamos soluciones digitales que impulsan tu presencia online.</p>
             </div>
 
