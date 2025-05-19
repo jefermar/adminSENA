@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','Training Center')
 @section('content')
-    @foreach ($TrainingCenters as $trainingcenter)
+    @foreach ($TrainingCenters as $trainingCenter)
        <tr>
                         <td>ID training Center:{{ $trainingCenter['id'] }}</td>
                         <br>
