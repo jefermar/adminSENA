@@ -4,8 +4,9 @@
 
                 @foreach ($areas as $area)
                     <tr>
-                        <td>{{ $area['id'] }}</td>
-                        <td>{{ $area['name'] }}</td>
+                        <td>ID Area: {{ $area['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $area['name'] }}</td>
                     </tr>
                 @endforeach
 

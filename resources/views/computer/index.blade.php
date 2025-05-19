@@ -4,9 +4,11 @@
 
                  @foreach ($computers as $computer)
                     <tr>
-                        <td>{{ $computer['id'] }}</td>
-                        <td>{{ $computer['number'] }}</td>
-                        <td>{{ $computer['brand'] }}</td>
+                        <td>ID computer: {{ $computer['id'] }}</td>
+                        <br>
+                        <td>Numero: {{ $computer['number'] }}</td>
+                        <br>
+                        <td>Marca: {{ $computer['brand'] }}</td>
                     </tr>
                 @endforeach
 

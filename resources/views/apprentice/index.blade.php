@@ -4,25 +4,31 @@
 
                 @foreach ($apprentices as $apprentice)
                     <tr>
-                        <td>{{ $apprentice['id'] }}</td>
-                        <td>{{ $apprentice['name'] }}</td>
-                        <td>{{ $apprentice['cell number'] }}</td>
+                        <td>ID Apprentices{{ $apprentice['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $apprentice['name'] }}</td>
+                        <br>
+                        <td>NUmero de celular: {{ $apprentice['cell number'] }}</td>
                     </tr>
                 @endforeach
 <br><br>
                @foreach ($courses as $course)
-                    <tr>
-                        <td>{{ $course['id'] }}</td>
-                        <td>{{ $course['course number'] }}</td>
-                        <td>{{ $course['day'] }}</td>
+                   <tr>
+                        <td>ID course:{{ $course['id'] }}</td>
+                        <br>
+                        <td>Nnumero de curso: {{ $course['course number'] }}</td>
+                        <br>
+                        <td>Dia o jornada:{{ $course['day'] }}</td>
                     </tr>
                 @endforeach
 <br><br>
                  @foreach ($computers as $computer)
                     <tr>
-                        <td>{{ $computer['id'] }}</td>
-                        <td>{{ $computer['number'] }}</td>
-                        <td>{{ $computer['brand'] }}</td>
+                        <td>ID computer: {{ $computer['id'] }}</td>
+                        <br>
+                        <td>Numero: {{ $computer['number'] }}</td>
+                        <br>
+                        <td>Marca: {{ $computer['brand'] }}</td>
                     </tr>
                 @endforeach  
 

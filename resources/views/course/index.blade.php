@@ -3,25 +3,30 @@
 @section('content')
 
                  @foreach ($courses as $course)
-                    <tr>
-                        <td>{{ $course['id'] }}</td>
-                        <td>{{ $course['course number'] }}</td>
-                        <td>{{ $course['day'] }}</td>
+                     <tr>
+                        <td>ID course:{{ $course['id'] }}</td>
+                        <br>
+                        <td>Nnumero de curso: {{ $course['course number'] }}</td>
+                        <br>
+                        <td>Dia o jornada:{{ $course['day'] }}</td>
                     </tr>
                 @endforeach
 <br><br>
                  @foreach ($areas as $area)
-                    <tr>
-                        <td>{{ $area['id'] }}</td>
-                        <td>{{ $area['name'] }}</td>
+                     <tr>
+                        <td>ID Area: {{ $area['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $area['name'] }}</td>
                     </tr>
                 @endforeach
  <br><br>           
                 @foreach ($trainingCenters as $trainingCenter)
                     <tr>
-                        <td>{{ $trainingCenter['id'] }}</td>
-                        <td>{{ $trainingCenter['name'] }}</td>
-                        <td>{{ $trainingCenter['cell number'] }}</td>
+                        <td>ID training Center:{{ $trainingCenter['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $trainingCenter['name'] }}</td>
+                        <br>
+                        <td>Location: {{ $trainingCenter['location'] }}</td>
                     </tr>
                 @endforeach
 

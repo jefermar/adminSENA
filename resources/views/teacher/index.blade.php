@@ -4,11 +4,11 @@
 
                 @foreach ($teachers as $teacher)
                     <tr>
-                        <td>{{ $teacher['id'] }}</td>
+                        <td>Id Teacher: {{ $teacher['id'] }}</td>
                         <br>
-                        <td>{{ $teacher['name'] }}</td>
+                        <td>Nombre: {{ $teacher['name'] }}</td>
                         <br>
-                        <td>{{ $teacher['email'] }}</td>
+                        <td>Email: {{ $teacher['email'] }}</td>
                         <br>
                     </tr>
                 @endforeach
@@ -18,20 +18,19 @@
 
                 @foreach ($areas as $area)
                     <tr>
-                        <td>{{ $area['id'] }}</td>
+                        <td>ID Area: {{ $area['id'] }}</td>
                         <br>
-                        <td>{{ $area['name'] }}</td>
+                        <td>Nombre: {{ $area['name'] }}</td>
                     </tr>
                 @endforeach
 <br><br>
                 @foreach ($trainingCenters as $trainingCenter)
                     <tr>
-                        <td>{{ $trainingCenter['id'] }}</td>
+                        <td>ID training Center:{{ $trainingCenter['id'] }}</td>
                         <br>
-                        <td>{{ $trainingCenter['name'] }}</td>
+                        <td>Nombre: {{ $trainingCenter['name'] }}</td>
                         <br>
-                        <td>{{ $trainingCenter['location'] }}</td>
-
+                        <td>Location: {{ $trainingCenter['location'] }}</td>
                     </tr>
                 @endforeach
 

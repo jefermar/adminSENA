@@ -2,10 +2,12 @@
 
 @section('content')
     @foreach ($TrainingCenters as $trainingcenter)
-        <tr>
-            <td>{{ $trainingcenter['id'] }}</td>
-            <td>{{ $trainingcenter['name'] }}</td>
-            <td>{{ $trainingcenter['location'] }}</td>
-        </tr>
+       <tr>
+                        <td>ID training Center:{{ $trainingCenter['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $trainingCenter['name'] }}</td>
+                        <br>
+                        <td>Location: {{ $trainingCenter['location'] }}</td>
+                    </tr>
     @endforeach
 @endsection

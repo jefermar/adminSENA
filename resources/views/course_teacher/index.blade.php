@@ -4,17 +4,22 @@
 
                   @foreach ($courses as $course)
                     <tr>
-                        <td>{{ $course['id'] }}</td>
-                        <td>{{ $course['course number'] }}</td>
-                        <td>{{ $course['day'] }}</td>
+                        <td>ID course:{{ $course['id'] }}</td>
+                        <br>
+                        <td>Nnumero de curso: {{ $course['course number'] }}</td>
+                        <br>
+                        <td>Dia o jornada:{{ $course['day'] }}</td>
                     </tr>
                 @endforeach
 <br><br>
                   @foreach ($teachers as $teacher)
-                    <tr>
-                        <td>{{ $teacher['id'] }}</td>
-                        <td>{{ $teacher['name'] }}</td>
-                        <td>{{ $teacher['email'] }}</td>
+                     <tr>
+                        <td>Id Teacher: {{ $teacher['id'] }}</td>
+                        <br>
+                        <td>Nombre: {{ $teacher['name'] }}</td>
+                        <br>
+                        <td>Email: {{ $teacher['email'] }}</td>
+                        <br>
                     </tr>
                 @endforeach
 
