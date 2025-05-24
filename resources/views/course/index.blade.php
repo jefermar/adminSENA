@@ -1,7 +1,10 @@
 @extends('layouts.app')
 @section('title','Courses')
 @section('content')
-
+ <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="mb-0">Listado: </h4>
+    <a href="{{ route('trainingcenter.create') }}" class="btn btn-dark">+ Crear </a>
+</div>
                  @foreach ($courses as $course)
                      <tr>
                         <td>ID course:{{ $course['id'] }}</td>
